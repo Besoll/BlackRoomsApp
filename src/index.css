@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --red-gradient: linear-gradient(145deg, #ff0000, #ff4d4d, #ff8080);
+  --card-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+.text-gradient {
+  background: var(--red-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.bg-red-gradient {
+  background: var(--red-gradient);
+}
+
+.bg-black-gradient {
+  background: linear-gradient(145deg, #11101d, #333333, #555555);
+}
+
+.box-shadow {
+  box-shadow: var(--card-shadow);
+}
+
+.sidebar {
+  -webkit-animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    }
+    }
+    
+    @keyframes slide-top {
+    0% {
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+    }
+    100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    }
+    }
+    
+    .feature-card:hover {
+    background: var(--red-gradient);
+    box-shadow: var(--card-shadow);
+    }
+    
+    .feedback-container .feedback-card:last-child {
+    margin-right: 0px;
+    }
+    
+    .feedback-card {
+    background: transparent;
+    }
+    
+    .feedback-card:hover {
+    background: var(--red-gradient);
+    }
+    
+    .red__gradient {
+    background: linear-gradient(180deg, rgba(255, 0, 0, 0) 0%, #ff4d4d 100%);
+    filter: blur(123px);
+    }
+    
+    .light-red__gradient {
+    background: linear-gradient(90deg, #ff8080 0%, #ff4d4d 100%);
+    filter: blur(900px);
+    }
+    
+    .white__gradient {
+    background: rgba(255, 255, 255, 0.6);
+    filter: blur(750px);
+    }
+    
+    .cta-button {
+    background: var(--red-gradient);
+    transition: all 0.3s ease;
+    }
+    
+    .cta-button:hover {
+    background: linear-gradient(145deg, #ff3333, #ff6666, #ff9999);
+    }

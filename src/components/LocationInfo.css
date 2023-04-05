@@ -1,0 +1,16 @@
+.location-info {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: #fff;
+    font-size: 1.1rem;
+    text-align: right;
+    z-index: 1;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .location-info {
+      font-size: 0.9rem;
+    }
+  }
+  
